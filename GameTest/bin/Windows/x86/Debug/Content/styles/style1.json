@@ -1,0 +1,25 @@
+﻿{
+  "text": {
+    "backcolor": "#3D3D3D",
+    "forecolor": "#AA11DD",
+    "anchor": "BottomCenter",
+    "font": "testFont12",
+    "fontsize": "14",
+    "padding-y": "20",
+    "autosize": "true",
+    "clipped": "true"
+  },
+  "button": {
+    "backcolor": "#000000",
+    "forecolor": "#FFFFFF",
+    "font": "testFont12",
+    "padding-y": "20"
+  },
+  "panel": {
+    "backcolor": "#AAAAAA",
+    "grabcolor": "#FFFFFF",
+    "scrollcolor": "#000000",
+    "scrollwidth": "20",
+    "scrollheight": "20"
+  }
+}

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game5", "Game5\Game5.csproj", "{D8330DB6-5981-45D6-A0CC-9B0AD506A7E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameTest", "GameTest\GameTest.csproj", "{D4A3E550-B6CE-46DE-A83C-DC3AA3C4A01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelEditor", "LevelEditor\LevelEditor.csproj", "{BBECC115-2561-4732-A3D4-230F403CB4D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8330DB6-5981-45D6-A0CC-9B0AD506A7E4}.Debug|x86.ActiveCfg = Debug|x86
+		{D8330DB6-5981-45D6-A0CC-9B0AD506A7E4}.Debug|x86.Build.0 = Debug|x86
+		{D8330DB6-5981-45D6-A0CC-9B0AD506A7E4}.Release|x86.ActiveCfg = Release|x86
+		{D8330DB6-5981-45D6-A0CC-9B0AD506A7E4}.Release|x86.Build.0 = Release|x86
+		{D4A3E550-B6CE-46DE-A83C-DC3AA3C4A01C}.Debug|x86.ActiveCfg = Debug|x86
+		{D4A3E550-B6CE-46DE-A83C-DC3AA3C4A01C}.Debug|x86.Build.0 = Debug|x86
+		{D4A3E550-B6CE-46DE-A83C-DC3AA3C4A01C}.Release|x86.ActiveCfg = Release|x86
+		{D4A3E550-B6CE-46DE-A83C-DC3AA3C4A01C}.Release|x86.Build.0 = Release|x86
+		{BBECC115-2561-4732-A3D4-230F403CB4D5}.Debug|x86.ActiveCfg = Debug|x86
+		{BBECC115-2561-4732-A3D4-230F403CB4D5}.Debug|x86.Build.0 = Debug|x86
+		{BBECC115-2561-4732-A3D4-230F403CB4D5}.Release|x86.ActiveCfg = Release|x86
+		{BBECC115-2561-4732-A3D4-230F403CB4D5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DF9E4F7-7B62-44A5-9D62-54CC9BD60395}
+	EndGlobalSection
+EndGlobal

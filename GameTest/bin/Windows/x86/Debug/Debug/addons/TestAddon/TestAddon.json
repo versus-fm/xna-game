@@ -1,0 +1,11 @@
+{
+    "Author": "Filip Mellberg",
+    "Version": "1.0.0",
+    "MainFunction": "main",
+    "Modules": [
+        "game",
+        "addons",
+        "steam"
+    ]
+
+}

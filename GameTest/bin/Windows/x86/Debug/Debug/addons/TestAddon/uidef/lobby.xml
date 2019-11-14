@@ -1,0 +1,8 @@
+<ui>
+    <panel name="mainPanel" width="250" height="300" anchor="Left" clipped="true">
+        <text name="member1" content="" anchor="TopCenter"></text>
+        <text name="member2" content="" anchor="BottomCenter" aligned="member1"></text>
+        <text name="member3" content="" anchor="BottomCenter" aligned="member2"></text>
+        <text name="member4" content="" anchor="BottomCenter" aligned="member3"></text>
+    </panel>
+</ui>

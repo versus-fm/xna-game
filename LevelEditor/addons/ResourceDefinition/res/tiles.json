@@ -1,0 +1,61 @@
+﻿{
+    "tiles": [
+        {
+            "Type": "tile",
+            "Data": {
+                "Name": "sandTile",
+                "Id": "0",
+                "TextureName": "spritesheet/desertTileset/index/1/0"
+            }
+        },
+        {
+            "Type": "tile",
+            "Data": {
+                "Name": "sandWallSouth",
+                "Id": "1",
+                "TextureName": "spritesheet/desertTileset/index/2/0"
+            }
+        },
+        {
+            "Type": "tile",
+            "Data": {
+                "Name": "sandWallNorth",
+                "Id": "2",
+                "TextureName": "spritesheet/desertTileset/index/0/1"
+            }
+        },
+        {
+            "Type": "tile",
+            "Data": {
+                "Name": "sandWallSouthWest",
+                "Id": "3",
+                "TextureName": "spritesheet/desertTileset/index/3/0"
+            }
+        },
+        {
+            "Type": "tile",
+            "Data": {
+                "Name": "sandWallSouthEast",
+                "Id": "4",
+                "TextureName": "spritesheet/desertTileset/index/5/0"
+            }
+        },
+        {
+            "Type": "tile",
+            "Data": {
+                "Name": "sandWallNorthWest",
+                "Id": "5",
+                "TextureName": "spritesheet/desertTileset/index/7/0"
+            }
+        },
+        {
+            "Type": "tile",
+            "Data": {
+                "Name": "sandWallNorthEast",
+                "Id": "6",
+                "TextureName": "spritesheet/desertTileset/index/6/0"
+            }
+        }
+    ]
+    
+}

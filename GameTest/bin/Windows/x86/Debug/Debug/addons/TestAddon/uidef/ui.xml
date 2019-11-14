@@ -1,0 +1,10 @@
+<ui>
+    <panel name="mainPanel" width="250" height="300" anchor="Center">
+        <button name="startButton" content="Start Game"
+        width="150" height="50" anchor="TopCenter">
+        </button>
+        <button name="quitButton" content="Quit" aligned="startButton" 
+        anchor="BottomCenter" width="150" height="50">
+        </button>
+    </panel>
+</ui>

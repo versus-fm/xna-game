@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8330DB6-5981-45D6-A0CC-9B0AD506A7E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game5</RootNamespace>
+    <AssemblyName>Game5</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Data\Attributes\Component\AutoComponentAttribute.cs" />
+    <Compile Include="Data\Attributes\DependencyInjection\FactoryConstructorAttribute.cs" />
+    <Compile Include="Data\Attributes\Lua\LuaProxyClassAttribute.cs" />
+    <Compile Include="Data\Attributes\Lua\LuaProxyHostAttribute.cs" />
+    <Compile Include="Data\Attributes\Lua\LuaStaticClassAttribute.cs" />
+    <Compile Include="Data\Attributes\Network\HeaderType.cs" />
+    <Compile Include="Data\Attributes\Network\NetworkClassAttribute.cs" />
+    <Compile Include="Data\Attributes\Network\NetworkFieldAttribute.cs" />
+    <Compile Include="Data\Attributes\Network\NetworkHeaderAttribute.cs" />
+    <Compile Include="Data\Attributes\Network\NetworkMethodAttribute.cs" />
+    <Compile Include="Data\Attributes\Network\NetworkSendableAttribute.cs" />
+    <Compile Include="Data\Attributes\Service\ServiceAttribute.cs" />
+    <Compile Include="Data\Attributes\Service\ServiceDependencyAttribute.cs" />
+    <Compile Include="Data\Attributes\State\StateAttribute.cs" />
+    <Compile Include="Data\Attributes\Tile\TileAttribute.cs" />
+    <Compile Include="Data\Attributes\Tile\TileCollectionAttribute.cs" />
+    <Compile Include="Data\Attributes\Tile\TileEntryAttribute.cs" />
+    <Compile Include="Data\Attributes\Tile\TileEntryType.cs" />
+    <Compile Include="Data\Attributes\UI\UIDocElementAttribute.cs" />
+    <Compile Include="Data\Attributes\UI\UIDocFieldAttribute.cs" />
+    <Compile Include="Data\Attributes\Component\ComponentAttribute.cs" />
+    <Compile Include="Data\Attributes\UI\UIDocHideAttribute.cs" />
+    <Compile Include="Data\Constants.cs" />
+    <Compile Include="Data\DataStructures\Array2D.cs" />
+    <Compile Include="Data\DataStructures\Helper\EDirection.cs" />
+    <Compile Include="Data\DataStructures\Helper\IQuadObject.cs" />
+    <Compile Include="Data\DataStructures\Helper\QuadNode.cs" />
+    <Compile Include="Data\DataStructures\KerningPair.cs" />
+    <Compile Include="Data\DataStructures\QuadTree.cs" />
+    <Compile Include="Data\FormattedString.cs" />
+    <Compile Include="Data\LuaAPI\API\UserControls\LuaCheckButtonAPI.cs" />
+    <Compile Include="Data\StyledString.cs" />
+    <Compile Include="DependencyInjection\ObjectFactory.cs" />
+    <Compile Include="Env\ECS\Component\HealthComponent.cs" />
+    <Compile Include="Env\ECS\Component\IEntityComponent.cs" />
+    <Compile Include="Env\ECS\EntitySceneManager.cs" />
+    <Compile Include="Env\ECS\System\HealthSystem.cs" />
+    <Compile Include="Env\ECS\System\EntitySystem.cs" />
+    <Compile Include="Graphics\Drawable\ISprite.cs" />
+    <Compile Include="Resource\Alias.cs" />
+    <Compile Include="Resource\EntityModel.cs" />
+    <Compile Include="Resource\InterfaceStyle.cs" />
+    <Compile Include="Resource\Resources.cs" />
+    <Compile Include="Resource\Song.cs" />
+    <Compile Include="Resource\SoundEffect.cs" />
+    <Compile Include="Resource\SpriteFont.cs" />
+    <Compile Include="Resource\Spritesheet.cs" />
+    <Compile Include="Resource\Texture.cs" />
+    <Compile Include="Service\ServiceImplementationNotFoundException.cs" />
+    <Compile Include="Service\Services\Implementations\EventHandler.cs" />
+    <Compile Include="Service\Services\Implementations\GameTimeService.cs" />
+    <Compile Include="Data\Helper\ByteStreamHelper.cs" />
+    <Compile Include="Data\Helper\ColorHelper.cs" />
+    <Compile Include="Data\Helper\ComponentCache.cs" />
+    <Compile Include="Data\Helper\FontHelper.cs" />
+    <Compile Include="Data\Helper\ObjectHelper.cs" />
+    <Compile Include="Data\Helper\StringHelper.cs" />
+    <Compile Include="Data\Helper\ThreadHelper.cs" />
+    <Compile Include="Data\Helper\TypeCache.cs" />
+    <Compile Include="Data\Helper\TypeHelper.cs" />
+    <Compile Include="Service\Services\Implementations\InformationObserver.cs" />
+    <Compile Include="Service\Services\Implementations\ProfilerSession.cs" />
+    <Compile Include="Service\Services\Implementations\SessionResult.cs" />
+    <Compile Include="Service\Services\Implementations\StateInfo.cs" />
+    <Compile Include="Service\Services\Implementations\StateStack.cs" />
+    <Compile Include="Service\Services\Interfaces\IEventHandler.cs" />
+    <Compile Include="Service\Services\Interfaces\IInformationObserver.cs" />
+    <Compile Include="Service\Services\Interfaces\IWorldManager.cs" />
+    <Compile Include="Service\Services\Interfaces\ITileRepository.cs" />
+    <Compile Include="Service\Services\Interfaces\IStateService.cs" />
+    <Compile Include="Service\Services\Interfaces\IPerformanceProfiler.cs" />
+    <Compile Include="Service\Services\Interfaces\IResourceService.cs" />
+    <Compile Include="Service\Services\Interfaces\IGameTimeService.cs" />
+    <Compile Include="Service\Services\Interfaces\IClient.cs" />
+    <Compile Include="Service\Services\Interfaces\ICamera.cs" />
+    <Compile Include="Service\Services\Interfaces\IPropertyService.cs" />
+    <Compile Include="Service\Services\Implementations\PropertyService.cs" />
+    <Compile Include="Data\LuaAPI\AddonAPI\Addon.cs" />
+    <Compile Include="Data\LuaAPI\AddonAPI\AddonConfiguration.cs" />
+    <Compile Include="Data\LuaAPI\AddonAPI\LuaContext.cs" />
+    <Compile Include="Data\LuaAPI\AddonAPI\Factory\ProxyFactory.cs" />
+    <Compile Include="Data\LuaAPI\API\LuaEntityAPI.cs" />
+    <Compile Include="Data\LuaAPI\API\LuaUserControlAPI.cs" />
+    <Compile Include="Data\LuaAPI\API\Statics\LuaAddon.cs" />
+    <Compile Include="Data\LuaAPI\API\Statics\LuaGame.cs" />
+    <Compile Include="Data\LuaAPI\API\Statics\LuaResources.cs" />
+    <Compile Include="Data\LuaAPI\API\Statics\LuaSteam.cs" />
+    <Compile Include="Data\LuaAPI\API\UserControls\LuaTextAPI.cs" />
+    <Compile Include="Data\LuaAPI\LuaConstants.cs" />
+    <Compile Include="Service\Services\Implementations\PerformanceProfiler.cs" />
+    <Compile Include="Data\RectangleF.cs" />
+    <Compile Include="Service\Services\Implementations\WorldManager.cs" />
+    <Compile Include="Geometry\Edge.cs" />
+    <Compile Include="Geometry\Extensions\VectorExtensions.cs" />
+    <Compile Include="Geometry\MinimumTranslationVector.cs" />
+    <Compile Include="Geometry\Polygon.cs" />
+    <Compile Include="Geometry\Projection.cs" />
+    <Compile Include="Service\Services\Implementations\SteamWorksClient.cs" />
+    <Compile Include="SteamCallback.cs" />
+    <Compile Include="UI\AnchorPoint.cs" />
+    <Compile Include="UI\Components\Button.cs" />
+    <Compile Include="UI\Components\GridView.cs" />
+    <Compile Include="UI\Components\Icon.cs" />
+    <Compile Include="UI\Components\NonGenericListView.cs" />
+    <Compile Include="UI\Components\ListView.cs" />
+    <Compile Include="UI\Components\Panel.cs" />
+    <Compile Include="UI\Components\CheckButton.cs" />
+    <Compile Include="UI\Components\Text.cs" />
+    <Compile Include="UI\Components\TextEdit.cs" />
+    <Compile Include="UI\Styling\ControlStyle.cs" />
+    <Compile Include="UI\Styling\InterfaceStyle.cs" />
+    <Compile Include="UI\UIEventArgs\MouseEventArgs.cs" />
+    <Compile Include="UI\UIEventArgs\TextChangedArgs.cs" />
+    <Compile Include="UI\UINode.cs" />
+    <Compile Include="UI\UserControl.cs" />
+    <Compile Include="UI\UserInterface.cs" />
+    <Compile Include="Service\Services\Implementations\TileRepository.cs" />
+    <Compile Include="ExtendedGame.cs" />
+    <Compile Include="Service\Services\Implementations\Camera.cs" />
+    <Compile Include="Graphics\DrawUtils.cs" />
+    <Compile Include="Graphics\SpriteBatchExtension.cs" />
+    <Compile Include="Graphics\Spritesheet.cs" />
+    <Compile Include="Service\Services\Interfaces\IInput.cs" />
+    <Compile Include="Service\Services\Implementations\InputService.cs" />
+    <Compile Include="Input\Interfaces\ITextInput.cs" />
+    <Compile Include="Service\Services\Interfaces\ITextInputService.cs" />
+    <Compile Include="Input\MouseButton.cs" />
+    <Compile Include="Service\Services\Implementations\TextInputService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\ResourceObject.cs" />
+    <Compile Include="Service\Services\Implementations\ResourceService.cs" />
+    <Compile Include="Service\ServiceLocator.cs" />
+    <Compile Include="StateBased\GameState.cs" />
+    <Compile Include="Service\Services\Implementations\StateService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lidgren.Network.1.0.2\lib\net451\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MoonSharp.Interpreter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=921e73ce94aa17f8, processorArchitecture=MSIL">
+      <HintPath>..\packages\MoonSharp.2.0.0.0\lib\net40-client\MoonSharp.Interpreter.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Polenter.SharpSerializer, Version=3.0.1.0, Culture=neutral, PublicKeyToken=8f4f20011571ee5f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpSerializer.3.0.1\lib\netstandard1.0\Polenter.SharpSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="Sigil, Version=4.7.0.0, Culture=neutral, PublicKeyToken=2d06c3494341c8ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sigil.4.7.0\lib\net45\Sigil.dll</HintPath>
+    </Reference>
+    <Reference Include="Steamworks.NET, Version=11.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Steamworks.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="Steamworks.NET.dll" />
+    <Content Include="steam_api64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="steam_appid.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StorageAPI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Attributes\System\" />
+    <Folder Include="Data\IO\" />
+    <Folder Include="Data\Parsers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

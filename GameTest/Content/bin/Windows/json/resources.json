@@ -1,0 +1,16 @@
+﻿{
+  "Resources": {
+    "Textures": [
+      {
+        "path": "textures/tiles/square",
+        "name": "test"
+      }
+    ],
+    "Fonts": [
+      {
+        "path": "fonts/consolas",
+        "name": "consolas"
+      }
+    ]
+  }
+}

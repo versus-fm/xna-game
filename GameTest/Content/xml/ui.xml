@@ -1,0 +1,35 @@
+<ui>
+    <panel name="secondPanel" height="200" width="200" anchor="Left" clipped="true">
+        <text content="Label 1" name="label1" anchor="TopCenter">
+        </text>
+        <text content="Label 2" name="label2" aligned="label1" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 3" name="label3" aligned="label2" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 4" name="label4" aligned="label3" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 5" name="label5" aligned="label4" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 6" name="label6" aligned="label5" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 7" name="label7" aligned="label6" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 8" name="label8" aligned="label7" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 9" name="label9" aligned="label8" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+        <text content="Label 10" name="label10" aligned="label9" onenter="sender.setForeColor('#FFFFFF')">
+        </text>
+    </panel>
+    <panel name="mainPanel" width="250" height="300" anchor="Center">
+        <button name="startButton" onclick="game:enterState('game', false);" content="Start Game"
+        width="150" height="50" anchor="TopCenter">
+        </button>
+        <button name="testButton" onclick="game:enterState('test', false)" content="TestGround" aligned="startButton" 
+        anchor="BottomCenter" width="150" height="50">
+        </button>
+        <button name="quitButton" onclick="game:exit()" content="Quit" aligned="testButton" 
+        anchor="BottomCenter" width="150" height="50">
+        </button>
+    </panel>
+</ui>

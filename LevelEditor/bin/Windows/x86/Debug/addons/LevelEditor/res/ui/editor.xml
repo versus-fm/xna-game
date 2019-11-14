@@ -1,0 +1,14 @@
+﻿<ui>
+  <panel name="toolPanel" width="20%" height="70%" anchor="Left" clipped="true">
+    <text name="toolPanelTitle" content="Tools" width="100%" height="1em" anchor="TopCenter" />
+    <checkButton name="tileTool" content="Tiles" aligned="toolPanelTitle" anchor="BottomLeft" padding-y="10" />
+    <checkButton name="colliderTool" content="Colliders" aligned="tileTool" anchor="BottomLeft" padding-y="10" />
+  </panel>
+  <panel name="tileContextPanel" width="20%" height="50%" anchor="BottomRight" aligned="tileList">
+    <text name="tileContextTitle" content="Tile Context" width="100%" height="1em" anchor="TopCenter" />
+  </panel>
+  <panel name="colliderContextPanel" width="20%" height="50%" anchor="BottomRight" aligned="tileList">
+    <text name="colliderContextTitle" content="Collider Context" width="100%" height="1em" anchor="TopCenter" />
+
+  </panel>
+</ui>

@@ -1,0 +1,9 @@
+﻿{
+  "modules": [
+    "game",
+    "addons",
+    "steam",
+    "resources"
+  ],
+  "MainFunction": "main"
+}

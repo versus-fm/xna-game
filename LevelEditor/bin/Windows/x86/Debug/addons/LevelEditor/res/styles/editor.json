@@ -1,0 +1,42 @@
+﻿{
+  "text": {
+    "backcolor": "#3D3D3D",
+    "forecolor": "white",
+    "font": "roboto",
+    "fontsize": "20",
+    "clipped": "true"
+  },
+  "button": {
+    "height": "1tx",
+    "width": "1tx",
+    "backcolor": "white",
+    "forecolor": "white",
+    "font": "roboto",
+    "fontsize": "20",
+    "padding-y": "2",
+    "texture": "guiButton",
+    "pressedTexture": "guiButtonPressed"
+  },
+  "panel": {
+    "backcolor": "#AAAAAA",
+    "grabcolor": "#FFFFFF",
+    "scrollcolor": "#000000",
+    "scrollwidth": "20",
+    "scrollheight": "20",
+    "clipped": "true"
+  },
+  "checkButton": {
+    "font": "roboto",
+    "fontsize": "20",
+    "insetWidth": "20",
+    "insetHeight": "5",
+    "checkedTexture": "guiCheck",
+    "uncheckedTexture": "guiUnCheck",
+    "height": "1em",
+    "width": "80%",
+    "backcolor": "white",
+    "forecolor": "gray",
+    "checkWidth": "32",
+    "checkHeight": "32"
+  }
+}
